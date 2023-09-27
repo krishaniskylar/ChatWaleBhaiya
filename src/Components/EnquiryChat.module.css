@@ -1,0 +1,133 @@
+/* Chat.module.css */
+
+.Paymentmaindiv1 {
+    width: 80vmax;
+  }
+  
+  .searchbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 30px;
+    width: 25vmax;
+    height: 52px;
+    background: #ffffff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
+    border-radius: 52px;
+    border: none;
+  }
+  
+  .requestBackHead {
+    height: 3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #375874;
+  }
+  
+  .chatEnquiryBtn {
+    height: 25px;
+    border: none;
+    font-family: "Merriweather";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    margin-left: 1rem;
+    color: #375874;
+    background-color: white;
+  }
+  
+  .chatList{
+    padding: 10px;
+    margin-top: 2vmax;
+    margin-bottom: 2vmax;
+    display: "flex";
+    flex-direction: "column";
+    margin-top: "3rem";
+    max-height: "25vmax";
+    overflow-y: "auto";
+  }
+  
+  .chatText {
+    width: 100%;
+    /* height: 38px; */
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+  
+  .Chatphoto > img {
+    height: "4rem";
+    margin-right: "2rem";
+  }
+  
+  #chatimg {
+    height: 4rem;
+    margin-right: 2rem;
+  }
+  
+  .verticalLine {
+    border-left: 1px solid #828282;
+    margin: 0px 162px 0 21px;
+    transform: rotate(180deg);
+  }
+  
+  .chatBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38vmax;
+    width: 65vmax;
+  }
+  
+  .chatBanner > img {
+    width: 25vmax;
+    height: 100%;
+  }
+  
+  @media (min-width: 320px) and (max-width: 490px) {
+  
+    .Paymentmaindiv1 {
+      margin-left: 0;
+      width: 100%;
+    }
+  
+    .searchbox {
+      display: none;
+    }
+  .chatList{
+    display: none;
+  }
+    .chatBanner {
+      width: 100%;
+      height: 100%;
+    }
+  
+    #chatimg {
+      display: none;
+    }
+  
+    .chatText {
+     display: none;
+    }
+  
+    .verticalLine {
+      display: none;
+    }
+  
+    .chatEnquiryBtn {
+      display: none;
+    }
+  
+    .requestBackHead {
+      display: none;
+    }
+  }
