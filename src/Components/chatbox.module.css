@@ -24,7 +24,10 @@
   
   .chatNavImage {
     height: 3rem;
+    width: 3rem;
+    object-fit: cover;
     margin-left: 1.5rem;
+    border-radius: 50%;
   }
   
   .chatNavText {
@@ -44,7 +47,7 @@
     justify-content: flex-end;
     padding: 10px 5px;
     gap: 5px;
-    width: 100%;
+    
   }
   
   .chatContainer{

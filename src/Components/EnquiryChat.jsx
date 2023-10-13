@@ -147,6 +147,7 @@ const EnquiryChat = () => {
   const handleClickFetch = async () => {
     const res = await axios.get('http://localhost:5000/api/qliqfix/get/AllSuppliers/651573c2f25adfa2f481d21e');
     setData(res.data?.getsuppliers);
+    console.log(res.data?.getsuppliers);
   }
 
   useEffect(() => {
@@ -251,8 +252,8 @@ const EnquiryChat = () => {
                   >
                     <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                       <div style={{ display: "flex", alignItems: "center" }}>
-                        <img id={item.profile} src={item.photo} alt="User" />
-                        <Typography>{item.username}</Typography>
+                        <img id={item?.profile} src={item.photo} alt="User" />
+                        <Typography>{item?.username}</Typography>
                       </div>
                     </AccordionSummary>
                     <AccordionDetails>
